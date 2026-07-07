@@ -91,7 +91,8 @@ def main():
     candidates = {
         "logistic_regression": LogisticRegression(max_iter=2000, class_weight="balanced"),
         "random_forest": RandomForestClassifier(
-            n_estimators=300, class_weight="balanced", random_state=42, n_jobs=-1
+            n_estimators=150, max_depth=12, min_samples_leaf=5,
+            class_weight="balanced", random_state=42, n_jobs=-1,
         ),
         "gradient_boosting": GradientBoostingClassifier(random_state=42),
         "hist_gradient_boosting": HistGradientBoostingClassifier(random_state=42),
