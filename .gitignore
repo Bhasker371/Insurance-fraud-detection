@@ -1,0 +1,17 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# MLflow local store
+mlruns/
+mlartifacts/
+mlflow.db
+
+# generated data + SQLite DB (regenerate with src/generate_data.py)
+data/*.csv
+data/*.db
+
+# local tool/session config
+.claude/
